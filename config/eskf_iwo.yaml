@@ -1,0 +1,7 @@
+iwo_sub_topics:
+  imu_topic: "/camera/imu"
+  wheel_topic: "/odometry/filtered"
+iwo_pub_topics:
+  odom_topic: "/odom"
+iwo_frame_topics:
+  frame_id: "world"

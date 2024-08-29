@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>eskf_iwo</name>
+  <version>2.8.2</version>
+  <description>The eskf_iwo package</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="sachin@luxonis.com">sachin</maintainer>
+  <author>Sachin Guruswamy</author>
+
+  <license>MIT</license>
+
+
+  <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
+  <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
+  
+  <depend condition="$ROS_VERSION == 1">roscpp</depend>
+  <depend condition="$ROS_VERSION == 1">rospy</depend>
+  <depend condition="$ROS_VERSION == 1">message_filters</depend>
+  
+  <depend condition="$ROS_VERSION == 2">rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf</depend>
+  <depend>ros_environment</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>nodelet</depend>
+
+  <depend>catkin</depend>
+  <depend>roscpp</depend>
+  <!-- <depend>catkin</depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend> -->
+
+  <!-- <exec_depend>robot_state_publisher</exec_depend> -->
+  <depend condition="$ROS_VERSION == 1">nodelet</depend>
+
+  <export>
+    <nodelet plugin="${prefix}/nodelets.xml"/>
+  </export>
+
+  <!-- <export>
+    <nodelet plugin="${prefix}/nodelets.xml"/>
+    <nodelet condition="$ROS_VERSION == 1" plugin="${prefix}/nodelets.xml" />
+    <build_type condition="$ROS_VERSION == 1">catkin</build_type>
+    <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
+  </export> -->
+
+</package>

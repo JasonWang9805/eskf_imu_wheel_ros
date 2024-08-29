@@ -1,0 +1,9 @@
+<library path="lib/libeskf_iwo_nodelet">
+  <class name="eskf_iwo/EskfIwoNodelet"
+         type="eskf_iwo::EskfIwoNodelet"
+         base_class_type="nodelet::Nodelet">
+    <description>
+      Multi-State contraint Kalman filter for visionaided inertial navigation with observability constain.
+    </description>
+  </class>
+</library>
